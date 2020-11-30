@@ -20,6 +20,6 @@ jobs:
       with:
         python-version: 3.7
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: pip install -r test/requirements.txt
     - name: Test with tox
       run: tox -c test/tox.${DISTRO}.ini
